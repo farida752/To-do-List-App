@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="8dp">
+
+    <View
+        android:layout_width="10dp"
+        android:layout_height="180dp"
+        android:background="#000000"
+        android:id="@+id/priority_line"
+        android:layout_marginRight="8dp"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/text_view_title_text"
+        android:text="Title"
+        android:textColor="#54C5AF"
+        android:layout_toRightOf="@id/priority_line"
+        android:textStyle="bold"
+        android:textSize="18sp"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/text_view_title"
+        android:textColor="#047464"
+        android:textSize="18sp"
+        android:layout_below="@id/text_view_title_text"
+        android:layout_toRightOf="@id/priority_line"
+        />
+
+    <ImageView
+        android:id="@+id/image_arrow"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_arrow_down"
+      android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/expandable_layout"
+        android:layout_below="@id/text_view_title"
+        android:orientation="vertical"
+        android:layout_toRightOf="@id/priority_line"
+        >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/text_view_description_text"
+            android:text="Description"
+            android:textColor="#54C5AF"
+            android:textStyle="bold"
+            android:textSize="18sp"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/text_view_description"
+            android:textColor="#047464"
+            android:textSize="18sp"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/text_view_priority_text"
+            android:text="Priority"
+            android:textColor="#54C5AF"
+            android:textStyle="bold"
+            android:textSize="18sp"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/text_view_priority"
+            android:textColor="#047464"
+            android:textSize="18sp"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/text_view_deadline_text"
+            android:text="Deadline"
+            android:textColor="#54C5AF"
+            android:textStyle="bold"
+            android:textSize="18sp"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/text_view_deadline"
+            android:textColor="#047464"
+            android:textSize="18sp"
+            />
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Edit"
+            android:layout_gravity="end"
+            android:background="#E4DA47"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:id="@+id/button_edit"
+            android:layout_marginBottom="8dp"
+            />
+    <View
+    android:layout_width="match_parent"
+    android:layout_height="3dp"
+    android:background="#E74512"
+    />
+
+    </LinearLayout>
+
+</RelativeLayout>
